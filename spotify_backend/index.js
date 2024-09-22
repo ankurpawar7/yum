@@ -23,9 +23,7 @@ app.use(express.json());
 // mongoose.connect() takes 2 arguments : 1. Which db to connect to (db url), 2. 2. Connection options
 mongoose
     .connect(
-        "mongodb+srv://admin:" +
-            process.env.MONGO_PASSWORD +
-            "@cluster0.rntapcg.mongodb.net/?retryWrites=true&w=majority",
+        "mongodb+srv://ankurpawar7:ankurpawar1805@cluster0.oyufg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
         {
             useNewUrlParser: true,
             useUnifiedTopology: true,

@@ -1,0 +1,43 @@
+{
+  "name": "yum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm --prefix Frontend run dev",
+    "server": "npm --prefix Backend run dev",
+    "dev": "concurrently \"npm:client\" \"npm:server\"",
+    "format:check": "npx prettier -c .",
+    "format": "npx prettier -w .",
+    "lint:client": "npx eslint Frontend --fix",
+    "lint:server": "npx eslint Backend --fix",
+    "lint:app": "concurrently \"npm run lint:client\" \"npm run lint:server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankurpawar7/yum.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankurpawar7/yum/issues"
+  },
+  "homepage": "https://github.com/ankurpawar7/yum#readme",
+  "dependencies": {
+    "@eslint/js": "^9.33.0",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.33.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-perfectionist": "^4.15.0",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.3.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14"
+  }
+}
